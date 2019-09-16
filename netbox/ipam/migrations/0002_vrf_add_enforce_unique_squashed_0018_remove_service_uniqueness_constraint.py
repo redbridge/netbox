@@ -229,7 +229,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='ipaddress',
             name='role',
-            field=models.PositiveSmallIntegerField(blank=True, choices=[(10, 'Loopback'), (20, 'Secondary'), (30, 'Anycast'), (40, 'VIP'), (41, 'VRRP'), (42, 'HSRP'), (43, 'GLBP'), (50, 'BGP P2P')], help_text='The functional role of this IP', null=True, verbose_name='Role'),
+            field=models.PositiveSmallIntegerField(blank=True, choices=[(10, 'Loopback'), (20, 'Secondary'), (30, 'Anycast'), (40, 'VIP'), (41, 'VRRP'), (42, 'HSRP'), (43, 'GLBP')], help_text='The functional role of this IP', null=True, verbose_name='Role'),
         ),
         migrations.AlterUniqueTogether(
             name='service',
